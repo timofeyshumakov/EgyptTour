@@ -1,0 +1,506 @@
+/*###############RESET###############*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/*###############FONTS###############*/
+@font-face {
+  font-weight: 700; /* Соответствует значению normal */
+  font-family: Mont;
+  src: url("../fonts/Mont-Bold.ttf");
+}
+@font-face {
+  font-weight: 800; /* Соответствует значению normal */
+  font-family: Mont;
+  src: url("../fonts/Mont-Heavy.ttf");
+}
+@font-face {
+  font-weight: 400; /* Соответствует значению normal */
+  font-family: Mont;
+  src: url("../fonts/Mont-Regular.ttf");
+}
+
+
+/*###############CODE###############*/
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+/* ---------------------------------------------------------------------------- */
+._container {
+	max-width: 1360px;
+	padding: 0px 15px;
+	margin: 0px auto;
+	box-sizing: content-box;
+}
+.header__container {
+    display: flex;
+    min-height: 120px;
+    align-items: center;
+    max-width: 1240px;
+ }
+ .menu__list {
+    display: flex;
+}
+.menu {
+    margin-left: auto;
+    margin-right: 0;
+}
+.menu__item:not(:last-child) {
+    margin: 0px 60px 0px 0px;
+}
+.menu__link {
+
+font-family: 'Mont';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+
+/* Text */
+color: #0B0614;
+
+opacity: 0.8;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.header__logo{
+/* EgyptTour */
+
+width: 144px;
+height: 36px;
+
+font-family: 'Mont';
+font-style: normal;
+font-weight: 800;
+font-size: 28px;
+line-height: 36px;
+/* identical to box height, or 129% */
+
+/* Text */
+color: #0B0614;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.header__block{
+	display: flex;
+}
+.header__search{
+	display: flex;
+}
+.button{
+	background: #FF5029;
+Padding : 20px 30px 20px 30px;
+color: #FFFFFF;
+border-radius:12px;
+text-align: center;
+vertical-align: bottom;
+font-family: Mont;
+font-size: 18px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0em;
+
+}
+.block1__main_image img{
+	object-fit: cover;
+	width: 100%;
+}
+.block1__text_container{
+	max-width: 1240px;
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+	transform: translate(5%, -50%);
+background-color: #fff;
+box-shadow: 0px 30px 60px 0px #C6BFBF2E;
+border-radius: 20px;
+
+}
+.block1__container{
+
+}
+.block1__text_card{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	  
+	  padding: 30px 40px;
+}
+.block1__text_block{
+	  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+align-content: space-between;
+flex-wrap: wrap;
+}
+.block1__title{
+padding: 0 0 15px 0 ;
+}
+.block1__text_button{
+
+}
+.block1__text_button_container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+}
+
+.footer__container{
+
+}
+.block2{
+	padding:90px 0 0 0;
+}
+.block2__title{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 0 100px 0;
+}
+.block4__main_img img{
+	border-radius: 20px;
+}
+.title_text{
+font-family: 'Mont';
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 109%;
+text-align: center;
+}
+.block2__cards{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 25% 25% 25% 25% ;
+gap: 15px ;
+}
+.block2__container{
+	max-width: 1240px;
+}
+.block2__card{
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.block2__card_photo img{
+	border-radius: 100%;
+	width: 190px;
+	border: 2px solid #FF5029;
+}
+.block2__card:first-child{
+background-color: #FF5029;
+
+}
+.block2__card:first-child{
+border-radius: 20px;
+
+}
+.footer__block{
+display: grid;
+grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+.footer__column{
+	display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+.footer__text{
+font-family: 'Mont';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 175%;
+text-align: left;
+color: rgba(255, 255, 255, 0.8);
+padding: 5px 0;
+}
+.footer__title{
+font-family: 'Mont';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 140%;
+color: #FFFFFF;
+padding: 0 0 40px 0;
+}
+.company_logo{
+
+font-family: 'Mont';
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: 111%;
+color: #FFFFFF;
+}
+.footer__column:first-child{
+	max-width: 330px;
+}
+.block3{
+	margin: 200px 0 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.block3__card{
+	position: relative;
+	background: #FEF4F5;
+z-index: -99;
+padding: 45px;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.block3__card_img{
+	position: relative;
+
+height: 300px;
+display: flex;
+justify-content: center;
+}
+.block3__card_person img{
+width: 100%;
+height: 100%;
+	position: absolute;
+
+}
+
+.block3__card_bg img{
+
+border-radius: 100%;
+}
+.block3__card_text{
+	padding: 50px 0 0 0;
+	width: 280px;
+}
+.block3__cards{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+	margin: 120px 0 0 0;
+}
+.block3__card_person img{
+
+}
+.sub_title_text{
+font-family: Mont;
+font-size: 40px;
+font-weight: 700;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: center;
+color: #0B0614;
+}
+.block3__card_bg {
+margin: 20px 0 0 0;
+}
+.block4{
+	margin: 200px 0 0 0;
+}
+.block4__text_container{
+		max-width: 1240px;
+	width: 90%;
+	display: flex;
+justify-content: space-between;
+	transform: translate(5%, -50%);
+background-color: #fff;
+box-shadow: 0px 30px 60px 0px #C6BFBF2E;
+border-radius: 20px;
+padding: 40px;
+flex-wrap: wrap;
+}
+.block4__button_block{
+	display: flex;
+flex-direction: column;
+}
+.block4__joins_imgs{
+    display: flex;
+
+}
+.block4__joins_img {
+
+}
+.block4__joins_img img{
+margin: 0 -20px 0 0;
+
+}
+.block4__button{
+
+}
+.block4__text{
+	width: 540px;
+	text-align: left;
+}
+.its_free{
+	color: #FF5029;
+}
+.block4__joins{
+display: flex;
+	}
+	.block4__joins_text{
+		margin: 0 0 0 30px;
+		width: 100px;
+
+font-family: Mont;
+font-size: 16px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+	}
+	.thousand{
+		color: #FF5029;
+	}
+	.block5__card_txt_title{
+
+font-family: 'Mont';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 31px;
+background: #FEF4F5;
+color: #FF5029;
+
+	}
+	.block5__cards{
+  display: grid;
+grid-template-areas:
+'a b '
+'a c '
+;
+grid-gap: 20px;
+
+background: #FFFFFF;
+
+border-radius: 20px;
+padding: 120px 0 180px 0;
+	}
+	.block5__card{
+
+		display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+
+background: #FFFFFF;
+box-shadow: 0px -8px 20px rgba(235, 235, 235, 0.15), 0px 30px 60px rgba(198, 191, 191, 0.15);
+border-radius: 20px;
+padding: 40px;
+	}
+
+.block5__card:nth-child(1){
+			
+		flex-wrap: wrap;
+		grid-area: a;
+		border-radius: 20px;
+}
+.block5__card:nth-child(2){
+
+		grid-area: b;
+}
+.block5__card:nth-child(3){
+
+		grid-area: c;
+}
+.block5__card_txt_text{
+	width: 360px;
+	text-align: left;
+	vertical-align:bottom;
+}
+.block5__card_txt_arrow{
+	position: relative;
+top:5px;
+left:-10px;
+}
+.block5__card_img img{
+border-radius: 20px;
+
+}
+.block5__card_txt_block{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: baseline;
+}
+.footer{
+	background-color: #14060B;
+	padding: 90px 0 0 0;
+}
+.block5__card_img{
+	padding: 0 30px 0 0;
+}
+.footer__contacts_social_block{
+	display: flex;
+}
+.footer__contacts_adress{
+	display: flex;
+
+font-family: 'Mont';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 175%;
+margin: 0  0 10px 0;
+color: #FFFFFF;
+
+}
+.footer__contacts_adress svg{
+	margin: 0 10px 0 0;
+}
+.footer__contacts_adress_block{
+	margin: 0  0 30px 0;
+}
+.footer__contacts_social:not(:last-child){
+margin: 0 10px 0 0;
+}
