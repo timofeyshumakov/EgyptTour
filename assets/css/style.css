@@ -25,9 +25,8 @@ nav,footer,header,aside {
 html,body {
     height: 100%;
     width: 100%;
-    font-size: 100%;
     line-height: 1;
-    font-size: 14px;
+    font-size: 1.14vw;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -129,7 +128,7 @@ h1,h2,h3,h4,h5,h6 {
 .container {
     padding: 0px 15px;
     margin: 0px auto;
-    -webkit-box-sizing: content-box;
+    -webkit-box-sizing: content-box;;
     box-sizing: content-box;
 }
 .header__container{
@@ -149,7 +148,7 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 1360px;
 }
 .header__line {
-    margin: 0 30px;
+    margin: 0 2vw;
 }
 
 .header__search {
@@ -173,10 +172,9 @@ gap: 3vw;
 }
 
 .menu__link {
-    font-family: 'Mont';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
 
     color: #0B0614;
@@ -193,18 +191,11 @@ gap: 3vw;
 }
 
 .header__logo {
-
-    width: 144px;
-    height: 36px;
-    font-family: 'Mont';
     font-style: normal;
     font-weight: 800;
-    font-size: 28px;
+    font-size: 1.75rem;
     line-height: 36px;
-
-
     color: #0B0614;
-
     -webkit-box-flex: 0;
     -ms-flex: none;
     flex: none;
@@ -228,20 +219,21 @@ gap: 3vw;
 }
 
 .header__lupa {
-    margin: 0 15px 0 0;
+    width: 1.67vw;
+    height: 1.67vw;
+    margin: 0 1vw 0 0;
 }
 
 button {
     background: #FF5029;
-    Padding: 20px 30px 20px 30px;
+    Padding: 1.4vw 2vw;
     color: #FFFFFF;
     border-radius: 12px;
     text-align: center;
     vertical-align: bottom;
-    font-family: Mont;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 150%;
     letter-spacing: 0em;
     white-space: nowrap;
 }
@@ -298,7 +290,7 @@ button {
 }
 
 .find-guide__title {
-    padding: 0 0 15px 0;
+    padding-bottom: 1.04vw;
 }
 
 .find-guide__text-button-container {
@@ -315,7 +307,7 @@ button {
 }
 
 .guides {
-    padding: 90px 0 0 0;
+    padding-top: 6.25vw;
 }
 
 .guides__title {
@@ -335,11 +327,10 @@ button {
     border-radius: 20px;
 }
 
-.title-text {
-    font-family: 'Mont';
+h2 {
     font-style: normal;
     font-weight: 800;
-    font-size: 64px;
+    font-size: 4rem;
     line-height: 109%;
     text-align: center;
 }
@@ -383,29 +374,27 @@ button {
 }
 
 .guides__card-title {
-    padding: 20px 0 0 0;
-    font-family: 'Mont';
+    padding-top: 0.14vw;
     font-style: normal;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 133%;
     text-align: center;
     color: #0B0614;
 }
 
 .guides__card-text {
-    padding: 10px 0 0 0;
-    font-family: 'Mont';
+    padding-top: 0.7vw;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 138%;
     text-align: center;
     color: rgba(11, 6, 20, 0.6);
 }
 
 .guides__card-rating {
-    padding: 10px 0 0 0;
+    padding-top: 0.7vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -430,10 +419,9 @@ button {
 }
 
 .footer__text {
-    font-family: 'Mont';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1.14rem;
     line-height: 175%;
     text-align: left;
     color: rgba(255, 255, 255, 0.8);
@@ -441,29 +429,28 @@ button {
 }
 
 .footer__title {
-    font-family: 'Mont';
     font-style: normal;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 140%;
     color: #FFFFFF;
-    padding: 0 0 40px 0;
+    padding-bottom: 2.8vw;
 }
 
 .company-logo {
     font-style: normal;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 111%;
     color: #FFFFFF;
 }
 
 .footer__column:first-child {
-    max-width: 330px;
+    max-width: 24vw;
 }
 
 .instruction {
-    margin: 200px 0 0 0;
+    margin-top: 13.8vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -496,6 +483,7 @@ button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    width: 28vw;
 }
 
 .instruction__card-img {
@@ -510,7 +498,6 @@ button {
 }
 
 .instruction__card-person img {
-    width: 100%;
     height: 100%;
     position: absolute;
 }
@@ -525,21 +512,23 @@ button {
 }
 
 .instruction__cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
+    display: flex;
+    justify-content: space-between;
     margin: 120px 0 0 0;
     width: 100%;
 }
-
+.learn__card-sub-title{
+    display: flex;
+}
 .sub-title-text {
-    font-family: Mont;
-    font-size: 1.8vw;
+    font-size: 1.625rem;
     font-weight: 700;
     line-height: 50px;
     letter-spacing: 0em;
     text-align: center;
     color: #0B0614;
+    display: flex;
+    flex-direction: column;
 }
 
 .instruction__card-bg {
@@ -592,7 +581,6 @@ button {
 }
 
 .join__text {
-    width: 540px;
     text-align: left;
 }
 
@@ -609,8 +597,7 @@ button {
 .join__joins-text {
     margin: 0 0 0 30px;
     width: 100px;
-    font-family: Mont;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 22px;
     letter-spacing: 0em;
@@ -622,10 +609,9 @@ button {
 }
 
 .learn__card-txt-title {
-    font-family: 'Mont';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 31px;
     background: #FEF4F5;
     color: #FF5029;
@@ -713,11 +699,11 @@ button {
 
 .footer {
     background-color: #14060B;
-    padding: 90px 0 0 0;
+    padding-top: 6.25vw;
 }
 
 .learn__card-img {
-    padding: 0 30px 0 0;
+    padding-right: 2.1vw;
 }
 
 .footer__contacts-social-block {
@@ -730,10 +716,9 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-family: 'Mont';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 175%;
     margin: 0  0 10px 0;
     color: #FFFFFF;
