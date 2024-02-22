@@ -131,6 +131,9 @@
               <div class="guides__card-title">Abayomi Mallik</div>
               <div class="guides__card-rating">
                 <div class="guides__card-star">
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg"></object>
+                </div>
+                <div class="guides__card-star">
                   <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#fff" />
                   </svg>
@@ -151,13 +154,7 @@
                   </svg>
                 </div>
               </div>
-              <div class="guides__card-star">
-                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#fff" />
-                </svg>
-              </div>
-            </div>
-            <div class="guides__card-text">1000+ reviews</div>
+              <div class="guides__card-text">1000+ reviews</div>
             </div>
             <div class="guides__card">
               <div class="guides__card-photo">
@@ -265,11 +262,10 @@
                   </svg>
                 </div>
               </div>
-              <div class="guides__card-rating">
-              </div>
-              <div class="guides__card-text">
+                <div class="guides__card-text">1000+ reviews</div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -327,9 +323,11 @@
       </section>
       <section class="join">
         <div class="join__container container container-big">
-          <h3>Are you a Tourist Guide in Egypt?</h3>
+          <h2 class="join-title">Are you a Tourist Guide in Egypt?</h2>
           <div class="join__main-img main-image">
-            <img src="assets/img/join__main-image.png" alt="">
+            <picture>
+              <source srcset="assets/img/join/bg.webp" type="image/webp"><img src="assets/img/join/bg.png" alt="" title="" loading="lazy" tabindex="0">
+            </picture>
           </div>
           <div class="join__text-container">
             <div class="join__text sub-title-text">Be referenced on our site, <span class="its-free">it's 100% free!</span></div>
@@ -428,18 +426,42 @@
             <div class="footer__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
           </div>
           <div class="footer__column">
-            <div class="footer__title">Useful Links</div>
-            <div class="footer__text">About</div>
-            <div class="footer__text">Guide</div>
-            <div class="footer__text">Inspiration</div>
-            <div class="footer__text">Contact</div>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="" class="menu__link">Useful Links</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Guide</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Inspiration</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Contact</a>
+              </li>
+            </ul>
           </div>
           <div class="footer__column">
-            <div class="footer__title">Resources</div>
-            <div class="footer__text">Become a guide</div>
-            <div class="footer__text">Legal</div>
-            <div class="footer__text">Blog</div>
-            <div class="footer__text">Help</div>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="" class="menu__link">Resources</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Become a guide</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Legal</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Help</a>
+              </li>
+            </ul>
           </div>
           <div class="footer__column">
             <div class="footer__title">Contact Us</div>
