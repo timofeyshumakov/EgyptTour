@@ -24,13 +24,15 @@
             </svg>
           </div>
           <div class="header__search">
-            <div class="header__search-img">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#0B0614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M20.9999 21L16.6499 16.65" stroke="#0B0614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <div class="header__search-text">Search</div>
+              <form action="/search" method="get">
+                <button class="search-button" type="submit">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#0B0614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.9999 21L16.6499 16.65" stroke="#0B0614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                </button>
+                <input type="text" name="text" placeholder="Search">
+              </form>
           </div>
         </div>
         <nav class="header__menu header-menu">
@@ -51,7 +53,9 @@
               <a href="" class="header-menu__link">Contact</a>
             </li>
           </ul>
-          <button class="header-menu__button">Sign Up</button>
+          <form action="#">
+            <button class="header-menu__button">Sign Up</button>
+          </form>
         </nav>
       </div>
     </header>
@@ -59,12 +63,11 @@
       <section class="find-guide">
         <div class="find-guide__container container container-big">
           <div class="find-guide__main-image main-image">
-            <h1>Find the Best Egyptian Guide</h1>
+            <h1 class="main-header">Find the Best <br>Egyptian Guide</h1>
             <picture>
               <source srcset="assets/img/main-image.webp" type="image/webp"><img src="assets/img/main-image.png" alt="" title="" loading="lazy" tabindex="0">
             </picture>
           </div>
-          
           <div class="find-guide__text-container container-small">
             <div class="find-guide__text-card">
               <div class="find-guide__text-block">
@@ -111,7 +114,9 @@
               </div>
             </div>
             <div class="find-guide__text-button-container">
-              <button class="find-guide__text-button">Search</button>
+              <form action="#">
+                <button class="find-guide__text-button">Search</button>
+              </form>
             </div>
           </div>
         </div>
@@ -120,7 +125,9 @@
         <div class="guides__container container container-small">
           <div class="guides__title">
             <h2>Guides for you!</h2>
-            <button class="guides__title-button">See All Guides</button>
+            <form action="#">
+              <button class="guides__title-button">See All Guides</button>
+            </form>
           </div>
           <div class="guides__cards">
             <div class="guides__card">
@@ -129,33 +136,27 @@
                   <source srcset="assets/img/guides/guide1.webp" type="image/webp"><img src="assets/img/guides/guide1.jpg" alt="" title="" loading="lazy" tabindex="0">
                 </picture>
               </div>
-              <div class="guides__card-title">Abayomi Mallik</div>
+              <div class="guides__card-title">Dendera Heba</div>
               <div class="guides__card-rating">
+                <div class="guides__card-stars">
                 <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg"></object>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#fff" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#fff" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#fff" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#fff" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
+                </div>
+                <div class="guides__card-text">1000+ reviews</div>
               </div>
-              <div class="guides__card-text">1000+ reviews</div>
             </div>
             <div class="guides__card">
               <div class="guides__card-photo">
@@ -163,35 +164,27 @@
                   <source srcset="assets/img/guides/guide2.webp" type="image/webp"><img src="assets/img/guides/guide2.jpg" alt="" title="" loading="lazy" tabindex="0">
                 </picture>
               </div>
-              <div class="guides__card-title">Berenike Eman</div>
+              <div class="guides__card-title">Dendera Heba</div>
               <div class="guides__card-rating">
+                <div class="guides__card-stars">
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#FF5029" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#FF5029" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#FF5029" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#FF5029" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#FF5029" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
+                </div>
+                <div class="guides__card-text">1000+ reviews</div>
               </div>
-              <div class="guides__card-text">1000+ reviews</div>
             </div>
             <div class="guides__card">
               <div class="guides__card-photo">
@@ -199,35 +192,27 @@
                   <source srcset="assets/img/guides/guide3.webp" type="image/webp"><img src="assets/img/guides/guide3.jpg" alt="" title="" loading="lazy" tabindex="0">
                 </picture>
               </div>
-              <div class="guides__card-title">Abu Bakar</div>
+              <div class="guides__card-title">Dendera Heba</div>
               <div class="guides__card-rating">
+                <div class="guides__card-stars">
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#FF5029" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#FF5029" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#FF5029" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#FF5029" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#FF5029" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
+                </div>
+                <div class="guides__card-text">1000+ reviews</div>
               </div>
-              <div class="guides__card-text">1000+ reviews</div>
             </div>
             <div class="guides__card">
               <div class="guides__card-photo">
@@ -237,32 +222,23 @@
               </div>
               <div class="guides__card-title">Dendera Heba</div>
               <div class="guides__card-rating">
+                <div class="guides__card-stars">
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#FF5029" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#FF5029" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#FF5029" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#FF5029" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
                 <div class="guides__card-star">
-                  <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065Z" fill="#FF5029" />
-                  </svg>
+                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
                 </div>
-              </div>
+                </div>
                 <div class="guides__card-text">1000+ reviews</div>
               </div>
             </div>
@@ -324,8 +300,8 @@
       </section>
       <section class="join">
         <div class="join__container container container-big">
-          <h2 class="join-title">Are you a Tourist Guide in Egypt?</h2>
-          <div class="join__main-img main-image">
+          <div class="join__main-image main-image">
+            <h2 class="main-header">Are you a Tourist <br> Guide in Egypt?</h2>
             <picture>
               <source srcset="assets/img/join/bg.webp" type="image/webp"><img src="assets/img/join/bg.png" alt="" title="" loading="lazy" tabindex="0">
             </picture>
@@ -333,7 +309,9 @@
           <div class="join__text-container container-small">
             <div class="join__text sub-title-text">Be referenced on our site, <span class="its-free">it's 100% free!</span></div>
             <div class="join__button-block">
-              <button class="join__button">I am a Tourist Guide</button>
+              <form action="#">
+                <button class="join__button">I am a Tourist Guide</button>
+              </form>
               <div class="join__joins">
                 <div class="join__joins-imgs">
                   <div class="join__joins-img">
