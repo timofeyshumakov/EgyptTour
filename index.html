@@ -38,19 +38,19 @@
         <nav class="header__menu header-menu">
           <ul class="header-menu__list">
             <li class="header-menu__item">
-              <a href="" class="header-menu__link">Home</a>
+              <a class="header-menu__link" href="#home">Home</a>
             </li>
             <li class="header-menu__item">
-              <a href="" class="header-menu__link">Guides</a>
+              <a class="header-menu__link" href="#guides">Guides</a>
             </li>
             <li class="header-menu__item">
-              <a href="" class="header-menu__link">About</a>
+              <a class="header-menu__link" href="#about">About</a>
             </li>
             <li class="header-menu__item">
-              <a href="" class="header-menu__link">Inspiration</a>
+              <a class="header-menu__link" href="#join">Inspiration</a>
             </li>
             <li class="header-menu__item">
-              <a href="" class="header-menu__link">Contact</a>
+              <a class="header-menu__link" href="#contact">Contact</a>
             </li>
           </ul>
           <form action="#">
@@ -60,36 +60,38 @@
       </div>
     </header>
     <main class="page">
-      <section class="find-guide">
+      <section class="find-guide" id="home">
         <div class="find-guide__container container container-big">
           <div class="find-guide__main-image main-image">
             <h1 class="main-header">Find the Best <br>Egyptian Guide</h1>
             <picture>
-              <source srcset="assets/img/main-image.webp" type="image/webp"><img src="assets/img/main-image.png" alt="" title="" loading="lazy" tabindex="0">
+              <source srcset="assets/img/main-image.webp" type="image/webp"><img class="main-image-img1" src="assets/img/main-image.png" alt="" title="" loading="lazy" tabindex="0">
+            </picture>
+            <picture>
+              <source srcset="assets/img/main-image2.webp" type="image/webp"><img class="main-image-img2" src="assets/img/main-image2.png" alt="" title="" loading="lazy" tabindex="0">
             </picture>
           </div>
-          <div class="find-guide__text-container container-small">
+          <div class="find-guide__text-container container-small text-container">
+            <div class="find-guide__options">
             <div class="find-guide__text-card">
               <div class="find-guide__text-block">
                 <div class="find-guide__title">Gender</div>
                 <div class="find-guide__text">Male</div>
               </div>
               <div class="find-guide__arrow">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <img src="assets/img/arrow.svg" alt="">
               </div>
-            </div>
+                  <div class="find-guide__line"></div>
+                </div>
             <div class="find-guide__text-card">
               <div class="find-guide__text-block">
                 <div class="find-guide__title">Age</div>
                 <div class="find-guide__text">24+</div>
               </div>
               <div class="find-guide__arrow">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <img src="assets/img/arrow.svg" alt="">
               </div>
+                  <div class="find-guide__line"></div>
             </div>
             <div class="find-guide__text-card">
               <div class="find-guide__text-block">
@@ -97,10 +99,9 @@
                 <div class="find-guide__text">English, Arabic</div>
               </div>
               <div class="find-guide__arrow">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <img src="assets/img/arrow.svg" alt="">
               </div>
+                  <div class="find-guide__line"></div>
             </div>
             <div class="find-guide__text-card">
               <div class="find-guide__text-block">
@@ -108,20 +109,17 @@
                 <div class="find-guide__text">Lacalisation</div>
               </div>
               <div class="find-guide__arrow">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <img src="assets/img/arrow.svg" alt="">
               </div>
             </div>
-            <div class="find-guide__text-button-container">
+          </div>
               <form action="#">
                 <button class="find-guide__text-button">Search</button>
               </form>
-            </div>
           </div>
         </div>
       </section>
-      <section class="guides">
+      <section class="guides" id="guides">
         <div class="guides__container container container-small">
           <div class="guides__title">
             <h2>Guides for you!</h2>
@@ -140,19 +138,19 @@
               <div class="guides__card-rating">
                 <div class="guides__card-stars">
                 <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
+                  <img src="assets/img/guides/star-white.svg" alt="" title="">
                 </div>
                 <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
+                  <img src="assets/img/guides/star-white.svg" alt="" title="">
                 </div>
                 <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
+                  <img src="assets/img/guides/star-white.svg" alt="" title="">
                 </div>
                 <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
+                  <img src="assets/img/guides/star-white.svg" alt="" title="">
                 </div>
                 <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
+                  <img src="assets/img/guides/star-white.svg" alt="" title="">
                 </div>
                 </div>
                 <div class="guides__card-text">1000+ reviews</div>
@@ -167,22 +165,22 @@
               <div class="guides__card-title">Dendera Heba</div>
               <div class="guides__card-rating">
                 <div class="guides__card-stars">
-                <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
-                </div>
-                <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
-                </div>
-                <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
-                </div>
-                <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
-                </div>
-                <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
-                </div>
-                </div>
+                  <div class="guides__card-star">
+                    <img src="assets/img/guides/star-orange.svg" alt="" title="">
+                  </div>
+                  <div class="guides__card-star">
+                    <img src="assets/img/guides/star-orange.svg" alt="" title="">
+                  </div>
+                  <div class="guides__card-star">
+                    <img src="assets/img/guides/star-orange.svg" alt="" title="">
+                  </div>
+                  <div class="guides__card-star">
+                    <img src="assets/img/guides/star-orange.svg" alt="" title="">
+                  </div>
+                  <div class="guides__card-star">
+                    <img src="assets/img/guides/star-orange.svg" alt="" title="">
+                  </div>
+                  </div>
                 <div class="guides__card-text">1000+ reviews</div>
               </div>
             </div>
@@ -195,22 +193,22 @@
               <div class="guides__card-title">Dendera Heba</div>
               <div class="guides__card-rating">
                 <div class="guides__card-stars">
-                <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
-                </div>
-                <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
-                </div>
-                <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
-                </div>
-                <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
-                </div>
-                <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
-                </div>
-                </div>
+                  <div class="guides__card-star">
+                    <img src="assets/img/guides/star-orange.svg" alt="" title="">
+                  </div>
+                  <div class="guides__card-star">
+                    <img src="assets/img/guides/star-orange.svg" alt="" title="">
+                  </div>
+                  <div class="guides__card-star">
+                    <img src="assets/img/guides/star-orange.svg" alt="" title="">
+                  </div>
+                  <div class="guides__card-star">
+                    <img src="assets/img/guides/star-orange.svg" alt="" title="">
+                  </div>
+                  <div class="guides__card-star">
+                    <img src="assets/img/guides/star-orange.svg" alt="" title="">
+                  </div>
+                  </div>
                 <div class="guides__card-text">1000+ reviews</div>
               </div>
             </div>
@@ -223,92 +221,97 @@
               <div class="guides__card-title">Dendera Heba</div>
               <div class="guides__card-rating">
                 <div class="guides__card-stars">
-                <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
-                </div>
-                <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
-                </div>
-                <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
-                </div>
-                <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
-                </div>
-                <div class="guides__card-star">
-                  <object type="image/svg+xml" data="assets/img/guides/star.svg" alt=""></object>
-                </div>
-                </div>
+                  <div class="guides__card-star">
+                    <img src="assets/img/guides/star-orange.svg" alt="" title="">
+                  </div>
+                  <div class="guides__card-star">
+                    <img src="assets/img/guides/star-orange.svg" alt="" title="">
+                  </div>
+                  <div class="guides__card-star">
+                    <img src="assets/img/guides/star-orange.svg" alt="" title="">
+                  </div>
+                  <div class="guides__card-star">
+                    <img src="assets/img/guides/star-orange.svg" alt="" title="">
+                  </div>
+                  <div class="guides__card-star">
+                    <img src="assets/img/guides/star-orange.svg" alt="" title="">
+                  </div>
+                  </div>
                 <div class="guides__card-text">1000+ reviews</div>
               </div>
             </div>
           </div>
           </div>
-        </div>
+
       </section>
-      <section class="instruction">
-        <div class="instruction__container container container-small">
+      <section class="about" id="about">
+        <div class="about__container container container-small">
           <h2>How does it Work?</h2>
-          <div class="instruction__cards">
-            <div class="instruction__card">
-              <div class="instruction__card-img">
-                <div class="instruction__card-person">
+          <div class="about__cards">
+            <div class="about__card">
+              <div class="about__card-img">
+                <div class="about__card-person">
                   <picture>
-                    <source srcset="assets/img/instruction/person1.webp" type="image/webp"><img src="assets/img/instruction/person1.png" alt="" title="" loading="lazy" tabindex="0">
+                    <source srcset="assets/img/about/person1.webp" type="image/webp"><img src="assets/img/about/person1.png" alt="" title="" loading="lazy" tabindex="0">
                   </picture>
                 </div>
-                <div class="instruction__card-bg">
+                <div class="about__card-bg">
                   <picture>
-                    <source srcset="assets/img/instruction/bg1.webp" type="image/webp"><img src="assets/img/instruction/bg1.png" alt="" title="" loading="lazy" tabindex="0">
+                    <source srcset="assets/img/about/bg1.webp" type="image/webp"><img src="assets/img/about/bg1.png" alt="" title="" loading="lazy" tabindex="0">
                   </picture>
                 </div>
               </div>
-              <div class="instruction__card-text sub-title-text">Select a Guide</div>
+              <div class="about__card-text">Select a Guide</div>
             </div>
-            <div class="instruction__card">
-              <div class="instruction__card-img">
-                <div class="instruction__card-person">
+            <div class="about__card">
+              <div class="about__card-img">
+                <div class="about__card-person">
                   <picture>
-                    <source srcset="assets/img/instruction/person2.webp" type="image/webp"><img src="assets/img/instruction/person2.png" alt="" title="" loading="lazy" tabindex="0">
+                    <source srcset="assets/img/about/person2.webp" type="image/webp"><img src="assets/img/about/person2.png" alt="" title="" loading="lazy" tabindex="0">
                   </picture>
                 </div>
-                <div class="instruction__card-bg">
+                <div class="about__card-bg">
                   <picture>
-                    <source srcset="assets/img/instruction/bg2.webp" type="image/webp"><img src="assets/img/instruction/bg2.png" alt="" title="" loading="lazy" tabindex="0">
+                    <source srcset="assets/img/about/bg2.webp" type="image/webp"><img src="assets/img/about/bg2.png" alt="" title="" loading="lazy" tabindex="0">
                   </picture>
                 </div>
               </div>
-              <div class="instruction__card-text sub-title-text">Contact Guide</div>
+              <div class="about__card-text">Contact Guide</div>
             </div>
-            <div class="instruction__card">
-              <div class="instruction__card-img">
-                <div class="instruction__card-person">
+            <div class="about__card">
+              <div class="about__card-img">
+                <div class="about__card-person">
                   <picture>
-                    <source srcset="assets/img/instruction/person3.webp" type="image/webp"><img src="assets/img/instruction/person3.png" alt="" title="" loading="lazy" tabindex="0">
+                    <source srcset="assets/img/about/person3.webp" type="image/webp"><img src="assets/img/about/person3.png" alt="" title="" loading="lazy" tabindex="0">
                   </picture>
                 </div>
-                <div class="instruction__card-bg">
+                <div class="about__card-bg">
                   <picture>
-                    <source srcset="assets/img/instruction/bg2.webp" type="image/webp"><img src="assets/img/instruction/bg3.png" alt="" title="" loading="lazy" tabindex="0">
+                    <source srcset="assets/img/about/bg3.webp" type="image/webp"><img src="assets/img/about/bg3.png" alt="" title="" loading="lazy" tabindex="0">
                   </picture>
                 </div>
               </div>
-              <div class="instruction__card-text sub-title-text">Create your Travel</div>
+              <div class="about__card-text">Create your Travel</div>
             </div>
           </div>
         </div>
       </section>
-      <section class="join">
+      <section class="join" id="join">
         <div class="join__container container container-big">
           <div class="join__main-image main-image">
             <h2 class="main-header">Are you a Tourist <br> Guide in Egypt?</h2>
             <picture>
-              <source srcset="assets/img/join/bg.webp" type="image/webp"><img src="assets/img/join/bg.png" alt="" title="" loading="lazy" tabindex="0">
+              <source srcset="assets/img/join/bg.webp" type="image/webp"><img class="main-image-img1" src="assets/img/join/bg.jpg" alt="" title="" loading="lazy" tabindex="0">
+            </picture>
+            <picture>
+              <source srcset="assets/img/join/bg2.webp" type="image/webp"><img class="main-image-img2" src="assets/img/join/bg2.png" alt="" title="" loading="lazy" tabindex="0">
             </picture>
           </div>
-          <div class="join__text-container container-small">
-            <div class="join__text sub-title-text">Be referenced on our site, <span class="its-free">it's 100% free!</span></div>
-            <div class="join__button-block">
+          <div class="join__text-container container-small text-container">
+            <div class="join__block">
+              <div class="join__title">Be referenced on our site,</div><span>it's 100% free!</span>
+            </div>
+            <div class="join__block">
               <form action="#">
                 <button class="join__button">I am a Tourist Guide</button>
               </form>
@@ -335,7 +338,7 @@
                     </picture>
                   </div>
                 </div>
-                <div class="join__joins-text"><span class="thousand">1000+</span>tourist join us</div>
+                <div class="join__joins-text"><span>1000+&nbsp;</span>tourist join us</div>
               </div>
             </div>
           </div>
@@ -351,15 +354,10 @@
                   <source srcset="assets/img/learn/place1.webp" type="image/webp"><img src="assets/img/learn/place1.jpg" alt="" title="" loading="lazy" tabindex="0">
                 </picture>
               </div>
-              <div class="learn__card-txt">
-                <div class="learn__card-txt-title">Hotel</div>
-                <div class="learn__card-sub-title">
-                <div class="learn__card-sub-title-text">Where to sleep in Luxor?</div>
-                  <span class="learn__card-txt-arrow">
-                    <img src="assets/img/learn/arrow.svg" alt="">
-                  </span>
-                </div>
-              </div>
+              <a class="learn__card-txt" href="#">
+                <div class="learn__card-title">Hotel</div>
+                <div class="learn__card-sub-title">Where to sleep in Luxor?<img src="assets/img/learn/arrow.svg" alt=""></div>
+              </a>
             </div>
             <div class="learn__card">
               <div class="learn__card-img">
@@ -368,13 +366,8 @@
                 </picture>
               </div>
               <div class="learn__card-txt">
-                <div class="learn__card-txt-title">Restaurant</div>
-                  <div class="learn__card-sub-title">
-                  <div class="learn__card-sub-title-text">5 restaurant in Cairo</div>
-                    <span class="learn__card-txt-arrow">
-                      <img src="assets/img/learn/arrow.svg" alt="">
-                    </span>
-                  </div>
+                <div class="learn__card-title">Restaurant</div>
+                  <div class="learn__card-sub-title">5 restaurant in Cairo<img src="assets/img/learn/arrow.svg" alt=""></div>
                 </div>
               </div>
             <div class="learn__card">
@@ -385,19 +378,14 @@
               </div>
               <div class="learn__card-txt">
                 <div class="learn__card-title">Advance & Tip</div>
-                <div class="learn__card-sub-title">
-                  <div class="learn__card-sub-title-text">Is Egypt dangerous?</div>
-                  <span class="learn__card-sub-title-arrow">
-                    <img src="assets/img/learn/arrow.svg" alt="">
-                  </span>
-                </div>
+                <div class="learn__card-sub-title">Is Egypt dangerous?<img src="assets/img/learn/arrow.svg" alt=""></div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="footer__container container container-small">
         <div class="footer__block">
           <div class="footer__column">
@@ -405,10 +393,8 @@
             <div class="footer__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
           </div>
           <div class="footer__column">
+            <div class="footer__title">Useful Links</div>
             <ul class="footer__menu footer-menu">
-              <li class="footer-menu__item">
-                <a href="" class="footer-menu__link">Useful Links</a>
-              </li>
               <li class="footer-menu__item">
                 <a href="" class="footer-menu__link">About</a>
               </li>
@@ -424,10 +410,8 @@
             </ul>
           </div>
           <div class="footer__column">
+            <div class="footer__title">Resources</div>
             <ul class="footer__menu footer-menu">
-              <li class="footer-menu__item">
-                <a href="" class="footer-menu__link">Resources</a>
-              </li>
               <li class="footer-menu__item">
                 <a href="" class="footer-menu__link">Become a guide</a>
               </li>
@@ -444,54 +428,42 @@
           </div>
           <div class="footer__column">
             <div class="footer__title">Contact Us</div>
-            <div class="footer__text">
-              <div class="footer__contacts">
-                <div class="footer__contacts-adress-block">
-                  <div class="footer__contacts-adress">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#FF5029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M22 6L12 13L2 6" stroke="#FF5029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-          <div class="footer__contacts-adress-text">infomail@gmail.com</div>
+                <div class="footer__adress-block">
+                  <div class="footer__adress">
+                    <img src="assets/img/contacts/email.svg" alt="">
+                    <div class="footer__adress-text">infomail@gmail.com</div>
                   </div>
-                  <div class="footer__contacts-adress">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#FF5029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#FF5029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <div class="footer__contacts-adress-text">48 Street Road, Cairo</div>
+                  <div class="footer__adress">
+                    <img src="assets/img/contacts/adress.svg" alt="">
+                    <div class="footer__adress-text">48 Street Road, Cairo</div>
                   </div>
                 </div>
-                <div class="footer__contacts-social-block">
-                  <div class="footer__contacts-social">
+                <div class="footer__social-block">
+                  <div class="footer__social">
                     <img src="assets/img/contacts/social1.svg" alt="">
                   </div>
-                  <div class="footer__contacts-social">
+                  <div class="footer__social">
                     <img src="assets/img/contacts/social2.svg" alt="">
                   </div>
-                  <div class="footer__contacts-social">
+                  <div class="footer__social">
                     <img src="assets/img/contacts/social3.svg" alt="">
                   </div>
-                  <div class="footer__contacts-social">
+                  <div class="footer__social">
                     <img src="assets/img/contacts/social4.svg" alt="">
                   </div>
                 </div>
-              </div>
-            </div>
           </div>
         </div>
+      <div class="footer__line"></div>
         <div class="footer__block">
-          <div class="footer__column">
-            <div class="footer__text">© 2022 EgyptTour</div>
-          </div>
-          <div class="footer__column">
-            <div class="footer__text">Privacy Policy</div>
-            <div class="footer__text">Term of Condition</div>
+          <div class="footer__copyright">© 2022 <span>EgyptTour</span></div>
+          <div class="footer__links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term of Condition</a>
           </div>
         </div>
       </div>
     </footer>
   </div>
 </body>
-
 </html>
