@@ -6,7 +6,7 @@
   <meta name="robots" content="index, follow">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <meta name="viewport" content width="1440px">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="assets/img/icon.jpg">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>EgyptTour</title>
@@ -18,14 +18,10 @@
       <div class="header__container container container-small">
         <div class="header__block">
           <a href="" class="header__logo">EgyptTour</a>
-          <div class="header__line">
-            <svg width="2" height="32" viewBox="0 0 2 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line x1="1" y1="1" x2="1" y2="31" stroke="#0B0614" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round" />
-            </svg>
-          </div>
+          <div class="header__line"></div>
           <div class="header__search">
               <form action="/search" method="get">
-                <button class="search-button" type="submit">
+                <button class="search-button" type="submit" aria-label="search">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#0B0614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                   <path d="M20.9999 21L16.6499 16.65" stroke="#0B0614" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -76,10 +72,13 @@
             <div class="find-guide__text-card">
               <div class="find-guide__text-block">
                 <div class="find-guide__title">Gender</div>
-                <div class="find-guide__text">Male</div>
-              </div>
-              <div class="find-guide__arrow">
-                <img src="assets/img/arrow.svg" alt="">
+                <div class="find-guide__text">
+                  <select>
+                    <option value="option1">Male</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                  </select>
+                  </div>
               </div>
                   <div class="find-guide__line"></div>
                 </div>
@@ -354,10 +353,10 @@
                   <source srcset="assets/img/learn/place1.webp" type="image/webp"><img src="assets/img/learn/place1.jpg" alt="" title="" loading="lazy" tabindex="0">
                 </picture>
               </div>
-              <a class="learn__card-txt" href="#">
+              <div class="learn__card-txt">
                 <div class="learn__card-title">Hotel</div>
-                <div class="learn__card-sub-title">Where to sleep in Luxor?<img src="assets/img/learn/arrow.svg" alt=""></div>
-              </a>
+                <a class="learn__card-sub-title" href="#">Where to sleep in Luxor?<img src="assets/img/learn/arrow.svg" alt=""></a>
+              </div>
             </div>
             <div class="learn__card">
               <div class="learn__card-img">
@@ -367,8 +366,8 @@
               </div>
               <div class="learn__card-txt">
                 <div class="learn__card-title">Restaurant</div>
-                  <div class="learn__card-sub-title">5 restaurant in Cairo<img src="assets/img/learn/arrow.svg" alt=""></div>
-                </div>
+                <a class="learn__card-sub-title" href="#">5 restaurant in Cairo<img src="assets/img/learn/arrow.svg" alt=""></a>
+              </div>
               </div>
             <div class="learn__card">
               <div class="learn__card-img">
@@ -378,7 +377,7 @@
               </div>
               <div class="learn__card-txt">
                 <div class="learn__card-title">Advance & Tip</div>
-                <div class="learn__card-sub-title">Is Egypt dangerous?<img src="assets/img/learn/arrow.svg" alt=""></div>
+                <a class="learn__card-sub-title" href="#">Is Egypt dangerous?<img src="assets/img/learn/arrow.svg" alt=""></a>
               </div>
             </div>
           </div>
@@ -430,26 +429,30 @@
             <div class="footer__title">Contact Us</div>
                 <div class="footer__adress-block">
                   <div class="footer__adress">
+                    <a href="mailto:infomail@gmail.com" target="_blank">
                     <img src="assets/img/contacts/email.svg" alt="">
                     <div class="footer__adress-text">infomail@gmail.com</div>
+                  </a>
                   </div>
                   <div class="footer__adress">
+                    <a href="#" onclick="openGoogleMaps()" target="_blank">
                     <img src="assets/img/contacts/adress.svg" alt="">
                     <div class="footer__adress-text">48 Street Road, Cairo</div>
+                  </a>
                   </div>
                 </div>
                 <div class="footer__social-block">
                   <div class="footer__social">
-                    <img src="assets/img/contacts/social1.svg" alt="">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="assets/img/contacts/social1.svg" alt="facebook"></a>
                   </div>
                   <div class="footer__social">
-                    <img src="assets/img/contacts/social2.svg" alt="">
+                    <a href="https://twitter.com/" target="_blank"><img src="assets/img/contacts/social2.svg" alt="twitter"></a>
                   </div>
                   <div class="footer__social">
-                    <img src="assets/img/contacts/social3.svg" alt="">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/contacts/social3.svg" alt="instagram"></a>
                   </div>
                   <div class="footer__social">
-                    <img src="assets/img/contacts/social4.svg" alt="">
+                    <a href="https://linkedin.com/" target="_blank"><img src="assets/img/contacts/social4.svg" alt="linkedin"></a>
                   </div>
                 </div>
           </div>
@@ -465,5 +468,6 @@
       </div>
     </footer>
   </div>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
