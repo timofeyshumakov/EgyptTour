@@ -141,7 +141,10 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 85rem;
 }
 .header__line {
+    width: 1px;
+height: 2rem;
     margin: 0 1.82rem;
+    border: 1px solid rgba(11, 6, 20, 0.3);
 }
 
 
@@ -161,9 +164,6 @@ gap: 2.5rem;
     line-height: 125%;
     color: #0B0614;
     opacity: 0.8;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .main-header{
@@ -200,14 +200,31 @@ h1{
     gap: 1rem;
     background-color: transparent;
 }
-
+.header__line img{
+    width: 1px;
+height: 2rem;
+}
 .header__search-text{
     color: rgba(11, 6, 20, 0.3);
 }
+.find-guide__text {
+    margin-left: -4px;
+  }
+
+  .find-guide__text select {
+    font-size: 1rem;
+    width: 13rem;
+    background-size: 12px 12px;
+  }
+  .find-guide__text select:focus,
+  select:active {
+      background-color: #FF5029;
+  }
+
 .find-guide__text-container .find-guide__text-button{
     Padding: 1.65rem 2.2rem;
 }
-button:not(.search-button) {
+button:not(.search-button){
     background: #FF5029;
     Padding: 1.27rem 2.5rem;
     color: #FFFFFF;
@@ -220,12 +237,24 @@ button:not(.search-button) {
     letter-spacing: 0em;
     white-space: nowrap;
 }
+
+.find-guide__text select::before{
+    background: #FF5029;
+    }
+.find-guide__title{
+    color: rgba(11, 6, 20, 0.3);
+}
 .search-button{
     display: flex;
     align-items: center;
     background:rgba(0, 0, 0, 0);
+    width: 1.5rem;
+    height: 1.5rem;
 }
-
+input{
+max-width: 10rem;
+font-size: 1rem;
+}
 .main-image{
     display: flex;
     justify-content: center;
@@ -345,7 +374,16 @@ h2 {
     text-align: center;
     color: #0B0614;
 }
-
+.footer a:hover{
+    color: #fff;
+    font-size: 105%;
+    transition: all 1s ease;
+}
+.header-menu a:hover{
+color: #FF5029;
+font-size: 105%;
+transition: all 1s ease;
+}
 .guides__card-text {
     padding-top: 0.55rem;
     font-weight: 600;
@@ -356,6 +394,7 @@ h2 {
 }
 .guides__card-star img{
     width: 1.5rem;
+    height: 1.5rem;
 }
 .guides__card-stars{
     display: flex;
@@ -483,6 +522,7 @@ text-align: left;
 max-width: 22rem;
 padding-top: 2rem;
 color: #0B0614;
+display: block;
 }
 .learn__card-sub-title img{
 width: 2.5rem;
@@ -646,13 +686,12 @@ padding: 2.5rem;
     display: flex;
 }
 
-.footer__adress {
+.footer__adress a{
     display: flex;
     align-items: center;
     gap: 0.75rem;
     font-weight: 700;
     font-size: 1rem;
-    margin-bottom: 0,625rem;
     color: #FFFFFF;
 }
 
